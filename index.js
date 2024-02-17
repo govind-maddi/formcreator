@@ -210,7 +210,7 @@ const handleComponentAdd = (type) => {
 
     innerlayoutcont.addEventListener('dragover', (e) => {
         e.preventDefault()
-        console.log(component);
+        //console.log(component);
         const afterElement = getDragAfterElement(innerlayoutcont, e.clientY)
         //console.log(afterElement);
         const draggable = document.querySelector('.component_dragging')
