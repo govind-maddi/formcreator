@@ -212,14 +212,14 @@ const handleComponentAdd = (type) => {
         e.preventDefault()
         console.log(component);
         const afterElement = getDragAfterElement(innerlayoutcont, e.clientY)
-        console.log(afterElement);
+        //console.log(afterElement);
         const draggable = document.querySelector('.component_dragging')
         innerlayoutcont.insertBefore(draggable, afterElement)
       })
 
       const getDragAfterElement = (component, y) => {
         const draggableElements = [...component.querySelectorAll('.component:not(.component_dragging)')]
-        console.log(draggableElements);
+        //console.log(draggableElements);
         return draggableElements.reduce((closest, child) => {
           const box = child.getBoundingClientRect()
           const offset = y - box.top - box.height / 2
