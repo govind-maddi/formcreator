@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormCreator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="parent_cont">
+
+        <!-- element selection cont -->
+        <div id="component_selection_cont">
+            <section id="component_selectors_header">
+                <label>Components</label>
+            </section>
+            <section id="component_selectors">
+                <button onclick="handleComponentAdd('input')">
+                    Input
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+                </button>
+                <button onclick="handleComponentAdd('select')">
+                    Select
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+                </button>
+                <button onclick="handleComponentAdd('textarea')">
+                    Textarea
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+                </button>
+            </section>
+        </div>
+
+        <!-- form layout cont -->
+        <div id="component_layout_cont">
+            <div id="component_layout_inner_cont">
+            
+            </div>
+        </div>
+
+        <div id="nav_cont">
+            <div id="nav_inner_cont">
+                <header>FormDesigner</header>
+            <section>
+                <button onclick="handleLayoutSave()">Save</button>
+            </section>
+            </div>
+        </div>
+
+        <div id="mob_component_selection_cont">
+            <div id="mob_component_selection_inner_cont">
+                <button onclick='handleComponentAdd("input")'>
+                    Input
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+                </button>
+                <button onclick='handleComponentAdd("select")'>
+                    Select
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+                </button>
+                <button onclick='handleComponentAdd("textarea")'>
+                    Textarea
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
